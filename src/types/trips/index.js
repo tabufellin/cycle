@@ -1,0 +1,5 @@
+export const TRIP_ADDED = 'TRIP_ADDED'
+export const TRIP_REMOVED = 'TRIP_REMOVED'
+export const TRIP_PARTICIPANT_ADDED = 'TRIP_PARTICIPANT_ADDED' 
+
+
