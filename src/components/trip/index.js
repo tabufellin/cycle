@@ -10,7 +10,7 @@ const Trip = ({eventId, tripData }) => (
         <p>a dodne: {tripData.toWhere}</p>
         <p>fecha: {tripData.date}</p>
         <p>hora: {tripData.time}</p>
-        <p>cantidad de participantes: {tripData.whoJoined.lenght}</p>
+        <p>cantidad de participantes: {tripData.whoJoined.length}</p>
       </div>
     </div>
 );

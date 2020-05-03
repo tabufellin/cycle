@@ -1,0 +1,10 @@
+button {
+    color: black;
+    border: red;
+    display: flex;
+    direction: column;
+}
+
+.component {
+    background-color: blueviolet;
+}

@@ -69,6 +69,11 @@ const FormRegisterUser = ({ onSubmit }) => {
 
         </Link>{' '}
 
+        <Link to={{pathname: '/login'}}>
+            <button type="submit" onClick={() => onSubmit()}>
+            {'¿Ya tienes una cuenta?'}
+            </button> 
+        </Link>{' '}
 
       
       </Fragment>

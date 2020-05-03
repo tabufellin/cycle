@@ -2,6 +2,7 @@ import React, { useState, Fragment } from 'react';
 import * as actions from '../../actions/trips'
 import {withRouter} from 'react-router-dom'
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom'
  //NOT DONE
 const FormTrips = ({ onSubmit }) => {
     const [fromWhere, changefromWhere]=useState('')
@@ -67,9 +68,12 @@ const FormTrips = ({ onSubmit }) => {
         />     
       
       </label>
+
+      <Link to={{pathname: '/nav-bar/inicio'}}>
         <button type="submit" onClick={() => onSubmit(fromWhere,toWhere, description, date, time)}>
           {'Crear'}
         </button>
+      </Link>     
 
       
       </Fragment>

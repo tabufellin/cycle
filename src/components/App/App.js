@@ -26,7 +26,7 @@ import Trips from '../trips/index'
 import CreateTrip from '../CreateTrip/index'
 import RegisterUser from '../RegiserUser/index'
 import LoginUser from '../LoginUser/index'
-
+import NavBar from '../NavBar/index'
 export const history = createBrowserHistory()
 const store = configureStore()
 
@@ -40,17 +40,21 @@ const App = () => (
   <Router history={history}>
     <Provider store={store}>
       <Link to="/"></Link> {' '}
-      <Link to={{pathname: '/login'}}>Iniciar Sesion</Link>{' '}
-      <Link to={{pathname: '/createTrip'}}>Iniciar Sesion</Link>{' '}
+      <Link to={{pathname: '/login'}}></Link>{' '}
+      <Link to={{pathname: '/createTrip'}}></Link>{' '}
+      <Link to={{pathname: '/nav-bar/inicio'}}></Link>{' '}
+
       <Switch>
         <Route exact path="/" component={RegisterUser}/>
         <Route exact path="/login" component={LoginUser} />
-        <Route path="/createTrip">
-          <CreateTrip></CreateTrip>
+        <Route path='/nav-bar/inicio' component={NavBar} >
+          <NavBar></NavBar>
           <Trips></Trips>
         </Route>
-        <Route>
-          
+        <Route path="/createTrip">
+          <NavBar></NavBar>
+          <CreateTrip></CreateTrip>
+
         </Route>
       </Switch>
     </Provider>

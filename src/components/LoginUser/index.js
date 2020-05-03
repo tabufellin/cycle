@@ -39,7 +39,7 @@ const FormLogin = ({users ,onSubmit }) => {
         />
       </lavel>
 
-      <Link to={{pathname: '/createTrip'}}>
+      <Link to={{pathname: '/nav-bar/inicio'}}>
         <button type="submit" onClick={() => onSubmit(email, password, users)}>
           {'Log in'}
         </button>
