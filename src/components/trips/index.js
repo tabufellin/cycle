@@ -2,6 +2,7 @@
 import Trip from '../trip/index'
 import { connect } from 'react-redux';
 import React  from 'react';
+import './styles6.css'
 import * as selectors from '../../reducers/index'
 
 const Trips = ({trips}) => (
@@ -13,7 +14,15 @@ const Trips = ({trips}) => (
 
       
       {trips.length === 0 ? (
-        <h4>{"No hay eventos :("}</h4>
+
+        <h4>
+        {"No hay eventos :("}
+
+        </h4>
+
+
+
+
       ) : (
         trips.map((item, i) => <Trip key={i} eventId={item} id={item.id}  tripData={item} />)
       )}

@@ -1,12 +1,6 @@
-button {
-    color: black;
-    border: red;
-    display: flex;
-    direction: column;
-}
+
 p{
- font-size: 250%
- color: white;
+ color: #4DFF22;
 
 }
 .component {

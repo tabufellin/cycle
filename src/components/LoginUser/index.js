@@ -31,14 +31,14 @@ const FormLogin = ({users ,onSubmit }) => {
           />
     
       </label>
-      <lavel>
+      <label>
         <input
           type="text"
           placeholder="password"
           value={password}
           onChange={e => changepassword(e.target.value)}
         />
-      </lavel>
+      </label>
 
       <Link to={{pathname: '/nav-bar/inicio'}}>
         <button type="submit" onClick={() => onSubmit(email, password, users)}>

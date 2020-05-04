@@ -1,6 +1,7 @@
 import React, { useState, Fragment } from 'react';
 import * as actions from '../../actions/trips'
 import {withRouter} from 'react-router-dom'
+import './styles1.css'
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom'
  //NOT DONE
@@ -42,13 +43,16 @@ const FormTrips = ({ onSubmit }) => {
           />
     
       </label>
+
+     <label>
         <input
           type="text"
           placeholder="Descripción"
           value={description}
           onChange={e => changeDescription(e.target.value)}
         />
-
+      </label>
+      
       <label>
         <input
           type="date"
