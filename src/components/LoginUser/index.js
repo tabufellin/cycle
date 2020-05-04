@@ -2,6 +2,7 @@ import React, { useState, Fragment } from 'react';
 import * as actions from '../../actions/users'
 import {withRouter} from 'react-router-dom'
 import { connect } from 'react-redux';
+import './styles2.css'
 import * as selectors from '../../reducers/index'
 import { Link } from 'react-router-dom'
 import { createBrowserHistory } from 'history'
@@ -33,7 +34,7 @@ const FormLogin = ({users ,onSubmit }) => {
       <lavel>
         <input
           type="text"
-          placeholder=""
+          placeholder="password"
           value={password}
           onChange={e => changepassword(e.target.value)}
         />

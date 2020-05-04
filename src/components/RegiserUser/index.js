@@ -44,23 +44,23 @@ const FormRegisterUser = ({ onSubmit }) => {
           />
     
       </label>
-      <lavel>
+      <label>
         <input
           type="text"
-          placeholder=""
+          placeholder="password"
           value={password}
           onChange={e => changepassword(e.target.value)}
         />
-      </lavel>
-      <lavel>
+      </label>
+      <label>
           <input
           type="text"
-          placeholder=""
+          placeholder="RepetirPassword"
           value={rePassword}
           onChange={e => changeRePassword(e.target.value)}
           />
 
-      </lavel>
+      </label>
 
         <Link to={{pathname: '/login'}}>
             <button type="submit" onClick={() => onSubmit(name,email, password, rePassword)}>

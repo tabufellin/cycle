@@ -1,0 +1,25 @@
+button {
+   background-color: #AAF988 ;
+  border: none;
+  
+  padding: 13px 28px;
+  text-decoration: none;
+  margin: 60px 500px;
+  cursor: pointer;
+}
+label{
+	display: flex;
+	margin: 7px 500px;
+}
+body {
+  background-image: url(Bicis3.jpg) ;
+background-repeat: no-repeat;
+background-size: cover;
+}
+h1{
+	color: #000000   ;
+  margin: 60px 500px;
+}
+.component {
+  
+}

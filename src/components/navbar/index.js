@@ -1,7 +1,7 @@
   
 import React, { Fragment } from 'react';
 import { connect } from 'react-redux';
-import './styles.css'
+import './styles3.css'
 import { Link } from 'react-router-dom'
 
 const NavBar = ({ onClickInicio, onClickSearch, onClickAddTrip, onClickHistory, onClickProfile }) => (

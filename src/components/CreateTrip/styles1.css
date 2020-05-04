@@ -1,0 +1,14 @@
+button {
+    color: black;
+    border: red;
+    display: flex;
+    direction: column;
+}
+p{
+ font-size: 250%
+ color: white;
+
+}
+.component {
+    
+}

@@ -26,7 +26,7 @@ import Trips from '../trips/index'
 import CreateTrip from '../CreateTrip/index'
 import RegisterUser from '../RegiserUser/index'
 import LoginUser from '../LoginUser/index'
-import NavBar from '../NavBar/index'
+import NavBar from '../navbar/index'
 export const history = createBrowserHistory()
 const store = configureStore()
 

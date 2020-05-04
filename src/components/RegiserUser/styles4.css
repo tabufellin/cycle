@@ -4,7 +4,12 @@ button {
     display: flex;
     direction: column;
 }
-
+label{
+	margin: 4px 2px;
+}
+h1{
+  margin: 4px 2px;
+}
 .component {
-    background-color: blueviolet;
+    
 }
