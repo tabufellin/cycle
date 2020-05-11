@@ -2,8 +2,15 @@
 import { connect } from 'react-redux';
 import * as selectors from '../../reducers/index'
 import React  from 'react';
+import './styles5.css'
 
 const Trip = ({eventId, tripData }) => (
+  <div class="square">
+  <div class="resumen1">
+        <h1> Tu Viaje</h1>
+        </div>
+
+
     <div className='event-wrapper'>
       <div className="info-event">
         <p>de donde: {tripData.fromWhere}</p>
@@ -11,8 +18,10 @@ const Trip = ({eventId, tripData }) => (
         <p>fecha: {tripData.date}</p>
         <p>hora: {tripData.time}</p>
         <p>cantidad de participantes: {tripData.whoJoined.length}</p>
+        <h1> --------------------------------------- </h1>
       </div>
     </div>
+   </div> 
 );
 
 const mapStateToProps = (state, {id}) => {

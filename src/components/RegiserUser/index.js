@@ -3,6 +3,7 @@ import * as actions from '../../actions/users'
 import {withRouter} from 'react-router-dom'
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom'
+import './styles4.css'
  //NOT DONE
  import { createBrowserHistory } from 'history'
  export const history = createBrowserHistory()
@@ -13,11 +14,30 @@ const FormRegisterUser = ({ onSubmit }) => {
     const [password, changepassword] = useState('')
     const [rePassword, changeRePassword] = useState('')
 
+    
+
     return (
       <Fragment>
-      <h1> Registro</h1>
 
-      
+
+      <div class="ellogo">
+      <img src= "https://i.imgur.com/75EXYrO.png"  width="320" height="150"> 
+      </img>
+      </div>
+
+
+      <div class="square">
+
+        <div class="resumen1">
+        <h1> ¡Unete a la comunidad más grande de ciclistas urbanos en Guatemala!</h1>
+        </div>
+
+      <div class="titulo1">
+      <h2> Registrate</h2>
+       </div>
+
+
+      <div class="nombre1">
       <label>
         <input
             type="text"
@@ -27,10 +47,16 @@ const FormRegisterUser = ({ onSubmit }) => {
             value={name}
             //checked = {"pipi" === selectedOption}
             onChange={e => changeName(e.target.value)}
-          />
+         />
           
       </label>
+      </div>
 
+
+
+
+
+      <div class="correo1">
       <label>
         <input
             type="text"
@@ -42,42 +68,66 @@ const FormRegisterUser = ({ onSubmit }) => {
             //checked = {"pecho" === selectedOption}
             onChange={e => changeemail(e.target.value)}
           />
-    
-      </label>
+     </label>
+      </div>
+
+
+
+
+    <div class="password1">  
+
       <label>
         <input
           type="text"
           placeholder="password"
+          id="2"
           value={password}
           onChange={e => changepassword(e.target.value)}
         />
       </label>
+    </div>
+
+
+
+      <div class="repetir1"> 
       <label>
           <input
           type="text"
           placeholder="RepetirPassword"
+          id="3"
           value={rePassword}
           onChange={e => changeRePassword(e.target.value)}
           />
 
       </label>
+        </div>
 
+
+         <div class="registrar1">
         <Link to={{pathname: '/login'}}>
+        
             <button type="submit" onClick={() => onSubmit(name,email, password, rePassword)}>
             {'Registrarme!'}
             </button>
-
+            
         </Link>{' '}
+       </div>
 
+
+        <div class="yatengocuenta1">
         <Link to={{pathname: '/login'}}>
+        
             <button type="submit" onClick={() => onSubmit()}>
             {'¿Ya tienes una cuenta?'}
             </button> 
+            
         </Link>{' '}
-
-      
+        </div>
+        
+      </div>
       </Fragment>
     );
+
   } 
 
 export default withRouter(
@@ -95,4 +145,5 @@ export default withRouter(
       }
     })
   )(FormRegisterUser))
+
 

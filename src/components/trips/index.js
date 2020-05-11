@@ -15,12 +15,16 @@ const Trips = ({trips}) => (
       
       {trips.length === 0 ? (
 
+
+
+        <div class="square">
+
         <h4>
         {"No hay eventos :("}
 
         </h4>
 
-
+        </div>
 
 
       ) : (

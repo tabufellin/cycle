@@ -14,9 +14,11 @@ const FormTrips = ({ onSubmit }) => {
 
     return (
       <Fragment>
+        
+
+        <div class="square">
         <p>Creemos un viaje!</p>
 
-      
       <label>
         <input
             type="text"
@@ -79,7 +81,7 @@ const FormTrips = ({ onSubmit }) => {
         </button>
       </Link>     
 
-      
+      </div>
       </Fragment>
     );
   } 

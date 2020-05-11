@@ -1,15 +1,67 @@
-button {
-    color: black;
-    border: red;
-    display: flex;
-    direction: column;
+
+.nombre1{
+	display: flex;	
 }
-label{
-	margin: 4px 2px;
+.correo1{
+	display: flex;	
 }
-h1{
-  margin: 4px 2px;
+.password1{
+	display: flex;	
 }
-.component {
-    
+.repetir1{
+	display: flex;	
+}
+button{
+	background-color: #D91B33;
+	color:#FFFCF8;
+}
+
+.ellogo {
+	display: flex;
+  border-radius: 8px;
+  margin: 10px 560px;
+}
+
+.registrar1{
+	
+	display: flex;
+	padding: 5px 5px;
+
+		
+}
+.yatengocuenta1{
+
+	display: flex;
+	padding: 5px 5px;
+		
+}
+
+
+
+.titulo1{
+
+	color: #0F0F0F  ;
+	font-family: "Segoe IU", sans-serif;
+}
+img {
+  border-radius: 8px;
+}
+.resumen1{
+font-family: "Segoe IU", sans-serif;
+	
+	
+		
+}
+
+.square{
+display: flex;
+flex-direction: column;
+
+margin: 60px 400px;
+border: 0px solid black;
+ width: 600px;
+ height: 400px;
+ padding: 25px;
+background-color: white;
+
 }

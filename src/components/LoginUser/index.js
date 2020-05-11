@@ -16,8 +16,14 @@ const FormLogin = ({users ,onSubmit }) => {
 
     return (
       <Fragment>
-        
+        <div class="ellogo2">
+      <img src= "https://i.imgur.com/75EXYrO.png"  width="200" height="100"> 
+      </img>
+      </div>
+      <div class="square2">
 
+
+       <div class="nombre2">
       <label>
         <input
             type="text"
@@ -31,6 +37,11 @@ const FormLogin = ({users ,onSubmit }) => {
           />
     
       </label>
+      </div>
+
+
+
+      <div class="password2">
       <label>
         <input
           type="text"
@@ -39,13 +50,18 @@ const FormLogin = ({users ,onSubmit }) => {
           onChange={e => changepassword(e.target.value)}
         />
       </label>
+         </div>
 
+
+
+         <div class="registrar2">
       <Link to={{pathname: '/nav-bar/inicio'}}>
         <button type="submit" onClick={() => onSubmit(email, password, users)}>
           {'Log in'}
         </button>
       </Link>
-
+       </div>
+ </div>
 
       
       </Fragment>

@@ -5,6 +5,7 @@ import './styles3.css'
 import { Link } from 'react-router-dom'
 
 const NavBar = ({ onClickInicio, onClickSearch, onClickAddTrip, onClickHistory, onClickProfile }) => (
+    <div class="elflex">
     <div className='component'>
     
     <Link to={{pathname: '/nav-bar/inicio'}}>
@@ -33,7 +34,7 @@ const NavBar = ({ onClickInicio, onClickSearch, onClickAddTrip, onClickHistory, 
     </button>
 
     </div>
-
+    </div>
 );
 
 

@@ -1,8 +1,5 @@
-button {
-    color: black;
-    border: red;
-    display: flex;
-    direction: column;
+.elflex{
+	display: flex;	
 }
 
 .component {
